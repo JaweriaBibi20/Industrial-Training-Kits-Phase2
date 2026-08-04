@@ -41,24 +41,24 @@
     /* GRID CONTAINER (Math Copy Boxes) */
     .math-grid {
       display: grid;
-      /* Fixed big size boxes (60px per square) */
       grid-template-columns: repeat(6, 60px);
       grid-auto-rows: 60px;
-      gap: 3px; /* Spacing between boxes */
+      gap: 0; /* Boxes k darmyan space khatam */
       background-color: #e0e0e0;
-      padding: 3px;
+      padding: 0; /* Container padding khatam */
       border: 2px solid #333;
     }
 
     /* INDIVIDUAL EMPTY COLORFUL BOXES */
     .box {
-      border-radius: 4px;
+      border-radius: 0; /* Sahi grid look ke liye corners straight kar diye hain */
       transition: transform 0.2s ease;
     }
 
     .box:hover {
       transform: scale(1.05);
       cursor: pointer;
+      z-index: 1; /* Hover karne par box overlap safe rahe */
     }
 
     /* COLOR VARIATIONS FOR BOXES */
